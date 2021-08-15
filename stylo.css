@@ -114,26 +114,6 @@ img {
 }
 html {
   font-size: 1.125rem;
-}
-
-span {
-  color: tomato;
-  background-color: white;
-}
-.link-container {
-  background-color: white;
-  margin-bottom: 20px;
-  width: 300px;
-  display: inline-block;
-  align-items: flex-start;
-}
-
-.link-container h2 {
-  background-color: rgb(3, 0, 3);
-  color: rgb(243, 240, 240);
-  font-size: 18px;
-  line-height: 30px;
-  margin: 0;
   padding-left: 10px;
 }
 
