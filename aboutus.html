@@ -2,12 +2,16 @@
 <html lang="es">
 
 <head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@500&display=swap" rel="stylesheet">
-    <link href="stylo.css" rel="stylesheet" type="text/css">
-    
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@500&display=swap" rel="stylesheet">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="./css/stylo.css" rel="stylesheet" type="text/css"> 
     <!-- Permitir Caracteres Especiales -->
     <meta charset="UTF-8">
     <!-- Linea 7 es darle compatibilidad con IE (Opcional) -->
@@ -20,52 +24,72 @@
 </head>
 
 <body>
-    <div class="container">
-        <nav class="navbar navbar-expand-sm navbar-light">
-            <a class="navbar-brand" href="#">
-                
-                <span class="hidden">Gorilla Brand</span>
+    <header  class="inicio--header  navbar fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+        
+          <a href="productos.html" class="navbar-brand"> 
+              <a class="navbar-brand" hreft=""> 
+                <h1 class="animate__animated animate__bounce"> Gorilla Brand| About Us </h1>
               </a>
-            <button 
-            	class="navbar-toggler" 
-            	type="button" 
-            	data-bs-toggle="collapse" 
-            	data-bs-target="#toggleMobileMenu" 
-            	aria-controls="toggleMobileMenu" 
-            	aria-expanded="false" 
-            	aria-label="Toggle navigation"
-            >
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="toggleMobileMenu">
-            
-                <ul class="navbar-nav ms-auto text-center">
-                    <li>
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="productos.html">Products</a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="company.html">Company</a>
-                    </li>
-                </ul>
-                
+             
+          <button class="navbar-toggler" 
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#toggleMobileMenu" 
+            aria-controls="toggleMobileMenu" 
+            aria-expanded="false" 
+            aria-label="Toggle navigation"
+          >
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="toggleMobileMenu">
+         
+          
+              <ul class="navbar-nav ms-auto text-center">
+                <li>
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="productos.html">Products</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="aboutus.html">About us</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="company.html">Contact</a>
+                </li>
 
+              </ul>
             </div>
         </nav>
-      </div>
-      <div class="container">
-        <h1>Hello, world!</h1>
-      </div> 
-
+      </header>
 <!-- Comentario en HTML -->
     <!-- Contenido de mi comentario -->
     <!-- Contenido o Elementos visuales -->
-    <h1> Gorilla Brand| About Us </h1>
-    <h2> we are a company from blablabla,thx 4 support us blbalbabla</h2>
+    <br>
+    <br>
+    <br>
+
+    <hr>
+
+
+    <h2 class="ejemplo-scss"> we are a company from blablabla,thx 4 support us blbalbabla</h2>
     <h1> &#128170; </h1>
     <br>
+    <ul class="list-group">
+        <li class="list-group-item">Dapibus ac facilisis in</li>
+        <a> prueba</a>
+        
+        <li class="list-group-item list-group-item-primary">This is a primary list group item</li>
+        <a> prueba 2 </a>
+        <li class="list-group-item list-group-item-secondary">This is a secondary list group item</li>
+        <li class="list-group-item list-group-item-success">This is a success list group item</li>
+        <li class="list-group-item list-group-item-danger">This is a danger list group item</li>
+        <li class="list-group-item list-group-item-warning">This is a warning list group item</li>
+        <li class="list-group-item list-group-item-info">This is a info list group item</li>
+        <li class="list-group-item list-group-item-light">This is a light list group item</li>
+        <li class="list-group-item list-group-item-dark">This is a dark list group item</li>
+      </ul>
 
     <footer class="footer">
         <div class="container">

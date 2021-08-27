@@ -1,0 +1,16 @@
+@mixin allh($margin, $padding) {
+  margin: $margin;
+  padding-left: $padding;
+  color: white;
+  background-color: black;
+  width: fit-content;
+}
+h1 {
+  @include allh(1px, 5px);
+}
+h2 {
+  @include allh(2px, 20px);
+}
+h3 {
+  @include allh(1px, 5px);
+}
