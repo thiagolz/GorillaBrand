@@ -1,6 +1,60 @@
 @import "./mixins";
 @import "./font-size";
 
+@for $i from 1 through 10 {
+  .aboutus:nth-child(#{$i}) {
+    background-color: lighten(#000000, $i * 5);
+  }
+}
+
+$color: red;
+
+.aboutus_p {
+  @if ($color==red) {
+    color: red;
+  } @else if($color == rojo) {
+    color: blue;
+  } @else {
+    color: pink;
+  }
+}
+.aboutus {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  p {
+    font-size: 20px;
+    color: white;
+    background-color: black;
+  }
+  img {
+    width: 100%;
+  }
+}
+$colors: (
+  aboutus: #d16e8d,
+  aboutus_h1: #ffac83,
+  aboutus_p: #3f78c9,
+  aboutus_img: #49c4a3,
+);
+$aboutus_h1: mapa-get($colors, aboutus_h1);
+aboutus_h1 {
+  background-color: $aboutus_h1;
+}
+$aboutus_p: map-get($colors, aboutus_p);
+aboutus_p {
+  background-color: $aboutus_p;
+}
+
+@each $name, $color in $colors {
+  .#{$name} {
+    color: $color;
+  }
+}
+
+// generic styling
+
 .ejemplo-scss {
   padding-top: 10px * 2;
   border: 1000 / 2;
