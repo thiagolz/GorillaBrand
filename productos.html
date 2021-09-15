@@ -19,7 +19,7 @@
     <!-- Linea 9 que nos va ayudar para que el contenido se adapte (Opcional) -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Linea 11 Titulo se va a ver en la pestaña de tu navegador -->
-    <meta name="description" content="Calisthenics & Street Workout brand for High Quality Equipment & Clothing">
+    <meta name="description" content="The most popular t-shirt and tank tops of the calisthenics scene in one collection. Stylish clothing tailored to the sport, with which you can show your lifestyle during training and in your free time.">
     <meta name="keywords" content="Clothes, Accesories, Equipment">
     <meta name="author" content="GORILLABRAND">
     <title> Gorilla Brand| Productos</title>
@@ -36,7 +36,7 @@
         
           <a href="productos.html" class="navbar-brand"> 
               <a class="navbar-brand" hreft=""> 
-                <h1 class="animate__animated animate__bounce"> Gorilant| Productos</h1>
+                <h1 class="animate__animated animate__bounce"> Gorilla Brand| Productos</h1>
               </a>
              
           <button class="navbar-toggler" 
@@ -70,17 +70,17 @@
             </div>
         </nav>
       </header>
-      <br>
-      <br>
-      <br>
-
+     
     <!-- Comentario en HTML -->
     <!-- Contenido de mi comentario -->
     <!-- Contenido o Elementos visuales -->
-    
     <hr>
     <hr>
-    <div class="clothes">
+    <article class="container">
+      <div class="clothes">
+        <div class="row">
+          <div class="col-md-5">
+ 
         <section>
             <div id="carouselExampleDark" class="carousel carousel-dark-fade" data-bs-ride="carousel">
                 <div class="carousel-indicators">
@@ -89,12 +89,12 @@
                 </div>
                 <div class="carousel-inner">
                   <div class="carousel-item active" data-bs-interval="10000">
-                    <img src="img/hoddie.jpg" class="d-block w-100" alt="...">
+                    <img src="img/hoddie.jpg" class="d-block w-100" alt="Hombre con buzo deportivo">
                     <div class="carousel-caption d-none d-md-block">
                     </div>
                   </div>
                   <div class="carousel-item" data-bs-interval="2000">
-                    <img src="img/hoodie2.jpg" class="d-block w-100" alt="...">
+                    <img src="img/hoodie2.jpg" class="d-block w-100" alt="Hombre con buzo deportivo">
                     <div class="carousel-caption d-none d-md-block">
                     </div>
                   </div>
@@ -113,8 +113,8 @@
             <button class="button-buy">Buy</button>
             <span class="precio">100-1000$</span>
             <hr>
-            <fieldset>
-                <div>
+            <fieldset class="description">
+                <div class="color">
                     <legend>Color:</legend>
                     <label for="ropa">Black:</label>
                     <input type="radio" name="color" id="Black" value="Black" />
@@ -123,11 +123,7 @@
                     <label for="Color">White</label>
                     <input type="radio" name="color" id="White" value="White" />
                 </div>
-
-
-                <br>
-                <br>
-                <div>
+                <div class="color">
                     <label for="talles">Size:</label>
                     <select name="talles">
                         <option value="L">Large</option>
@@ -135,10 +131,12 @@
                         <option value="S">Small</option>
                     </select>
                 </div>
-            </fieldset>       
+            </fieldset> 
+          </div>      
         </section>
-        <section>
 
+        <div class="col-md-5">
+        <section>
             <div id="carouselExampleDark" class="carousel carousel-dark-fade" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                   <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -146,12 +144,12 @@
                 </div>
                 <div class="carousel-inner">
                   <div class="carousel-item active" data-bs-interval="10000">
-                    <img src="img/pantalones2.jpg" class="d-block w-100" alt="...">
+                    <img src="img/pantalones2.jpg" class="d-block w-100" alt="Pantalones Deportivos">
                     <div class="carousel-caption d-none d-md-block">
                     </div>
                   </div>
                   <div class="carousel-item" data-bs-interval="2000">
-                    <img src="img/pantalones2.jpg" class="d-block w-100" alt="...">
+                    <img src="img/pantalones2.jpg" class="d-block w-100" alt="Pantalones Deportivos">
                     <div class="carousel-caption d-none d-md-block">
                     </div>
                   </div>
@@ -169,8 +167,8 @@
             <button class="button-buy">Buy</button>
             <span>100-1000$</span>
             <hr>
-            <fieldset>
-                <div>
+            <fieldset class="description">
+                <div class="color">
                     <legend>Color:</legend>
                     <label for="ropa">Black:</label>
                     <input type="radio" name="color" id="Black" value="Black" />
@@ -179,10 +177,6 @@
                     <label for="Color">White</label>
                     <input type="radio" name="color" id="White" value="White" />
                 </div>
-
-
-                <br>
-                <br>
                 <div>
                     <label for="talles">Size:</label>
                     <select name="talles">
@@ -192,7 +186,11 @@
                     </select>
                 </div>
             </fieldset>
-        </section>
+            </section> 
+        </div>  
+        
+
+        <div class="col-md-5">
         <section>
             <div id="carouselExampleDark" class="carousel carousel-dark-fade" data-bs-ride="carousel">
                 <div class="carousel-indicators">
@@ -201,12 +199,12 @@
                 </div>
                 <div class="carousel-inner">
                   <div class="carousel-item active" data-bs-interval="10000">
-                    <img src="img/shirt.jpg" class="d-block w-100" alt="...">
+                    <img src="img/shirt.jpg" class="d-block w-100" alt="Hombre Remera deportiva">
                     <div class="carousel-caption d-none d-md-block">
                     </div>
                   </div>
                   <div class="carousel-item" data-bs-interval="2000">
-                    <img src="img/shirt2.jpg" class="d-block w-100" alt="...">
+                    <img src="img/shirt2.jpg" class="d-block w-100" alt="Hombre Remera deportiva">
                     <div class="carousel-caption d-none d-md-block">
                     </div>
                   </div>
@@ -224,8 +222,8 @@
             <button class="button-buy"> Buy </button>
             <span>100-1000$</span>
             <hr>
-            <fieldset>
-                <div>
+            <fieldset class="description">
+                <div class="color">
                     <legend>Color:</legend>
                     <label for="ropa">Black:</label>
                     <input type="radio" name="color" id="Black" value="Black" />
@@ -234,11 +232,7 @@
                     <label for="Color">White</label>
                     <input type="radio" name="color" id="White" value="White" />
                 </div>
-
-
-                <br>
-                <br>
-                <div>
+                <div class="color">
                     <label for="talles">Size:</label>
                     <select name="talles">
                         <option value="L">Large</option>
@@ -247,11 +241,68 @@
                     </select>
                 </div>
             </fieldset>
-        </section>
+          </section>
+        </div>
+
+          <div class="col-md-5">
+            <section >
+                <div id="carouselExampleDark" class="carousel carousel-dark-fade" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="img/mujershirt.jpg" class="d-block w-100" alt="Pantalones Deportivos">
+                        <div class="carousel-caption d-none d-md-block">
+                        </div>
+                      </div>
+                      <div class="carousel-item" data-bs-interval="2000">
+                        <img src="img/mujersleeves.jpg" class="d-block w-100" alt="Pantalones Deportivos">
+                        <div class="carousel-caption d-none d-md-block">
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                <h2>Woman Shirts</h2>
+                <button class="button-buy">Buy</button>
+                <span>100-1000$</span>
+                <hr>
+                <fieldset class="description">
+                    <div class="color">
+                        <legend>Color:</legend>
+                        <label for="ropa">Black:</label>
+                        <input type="radio" name="color" id="Black" value="Black" />
+                        <label for="Color">Red</label>
+                        <input type="radio" name="Color" value="Red" id="Red" />
+                        <label for="Color">White</label>
+                        <input type="radio" name="color" id="White" value="White" />
+                    </div>
+                    <div>
+                        <label for="talles">Size:</label>
+                        <select name="talles">
+                            <option value="L">Large</option>
+                            <option value="M">Medium</option>
+                            <option value="S">Small</option>
+                        </select>
+                    </div>
+                </fieldset>
+                 
+            </section>
+           </div>
+          </div>
+       </div>
     </div>
-                
-    <br>
-    <br>
+
+    </article>             
     
     <div>
         <table class="styled-table">
@@ -280,18 +331,20 @@
     <br>
 
     <footer class="footer">
-        <div class="container">
+        <div class="container-footer">
             <div class="row">
                 <div class="col-md-5">
-                    <h5><i class="fa fa-road"></i> Gorilant.</h5>
+                    <h5><i class="fa fa-road"></i> Gorilla Brand.</h5>
                     <div class="row">
                         <div class="col-6">
-                            <ul class="list-unstyled">
-                                <li><a href="https://www.facebook.com/">Facebook</a></li>
-                                <li><a href="https://www.instagram.com/">Instagram</a></li>
-                                <li><a href="https://web.whatsapp.com/">Whatsapp</a></li>
-                                <li><a href="https://twitter.com/home">Twitter</a></li>
-                            </ul>
+                          <ul class="list-unstyled">
+                            <div class="socialmedia">
+                              <li><a href="https://www.facebook.com/"><img src="./img/socialmedia/facebook.png" alt="facebook"></a></li>
+                              <li><a href="https://www.instagram.com/"><img src="./img/socialmedia/instagram.png" alt="instagram"></a></li>
+                              <li><a href="https://web.whatsapp.com/"><img src="./img/socialmedia/whatsapp.png" alt="whatsapp"></a></li>
+                              <li><a href="https://twitter.com/home"><img src="./img/socialmedia/twitter.png" alt="instagram"></a></li>
+                            </div> 
+                          </ul>
                         </div>
                         <br>
                     </div>
