@@ -1,3 +1,28 @@
+.tabla-ventas {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-left: 20px;
+}
+.men-section,
+.woman-section,
+.paralletes-section {
+  margin-bottom: 15px;
+}
+.ajustar-caja {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.d-flex td {
+  width: 20vw;
+  border-radius: 15px;
+  height: 30vh;
+}
 .d-flex iframe {
   width: 85vw;
   border-radius: 15px;
