@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "name": "Hoddie",
+    "tag": "hoddie",
+    "price": 70,
+    "inCart": 0,
+    "image": ".//img/hoddie.jpg"
+  },
+  {
+    "id": 2,
+    "name": "White Pants",
+    "tag": "pantalones2",
+    "price": 50,
+    "inCart": 0,
+    "image": ".//img/pantalones2.jpg"
+  },
+
+  {
+    "id": 3,
+    "name": "Black Shirt",
+    "tag": "shirt",
+    "price": 30,
+    "inCart": 0,
+    "image": ".//img/shirt.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Women's Black Shirt",
+    "tag": "mujershirt",
+    "price": 30,
+    "inCart": 0,
+    "image": ".//img/mujershirt.jpg"
+  }
+]

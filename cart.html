@@ -10,6 +10,7 @@
   rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 />
+<link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="./css/stylo.css" rel="stylesheet" type="text/css"> 
     <!-- Permitir Caracteres Especiales -->
@@ -22,7 +23,7 @@
     <meta name="description" content="The most popular t-shirt and tank tops of the calisthenics scene in one collection. Stylish clothing tailored to the sport, with which you can show your lifestyle during training and in your free time.">
     <meta name="keywords" content="Clothes, Accesories, Equipment">
     <meta name="author" content="GORILLABRAND">
-    <title> Gorilla Brand| Productos</title>
+    <title> Gorilla Brand| Cart</title>
 
 </head>
 
@@ -36,7 +37,7 @@
         
           <a href="productos.html" class="navbar-brand"> 
               <a class="navbar-brand" hreft=""> 
-                <h1> Gorilla Brand| Productos</h1>
+                <h1> Gorilla Brand| Cart</h1>
               </a>
              
           <button class="navbar-toggler" 
@@ -65,9 +66,11 @@
                 <li>
                     <a class="nav-link" href="contact.html">Contact</a>
                 </li>
-                <li>
-                    <a class="nav-link" href="cart.html">Contact</a>
-                </li>
+                <li class="cart">
+                  <a href="cart.html">
+                      <ion-icon name="basket"></ion-icon>Cart<span>0</span>
+                  </a>
+              </li>
 
               </ul>
             </div>
@@ -78,6 +81,72 @@
     <!-- Contenido de mi comentario -->
     <!-- Contenido o Elementos visuales -->
     
+      <div class="products-container">
+        <div class="product-header">
+          <h5 class="product-title">PRODUCT</h5>
+          <h5 class="price sm-hide">PRICE</h5>
+          <h5 class="quantity">QUANTITY</h5>
+          <h5 class="total">TOTAL</h5>
+        </div>
+        <div class="products"></div>
+      </div>
+<!-- 
+      <div class="modal-container2"> -->
+        <div class= "modal-container2">
+        <div class="modal-cart">
+          <h3 class="mb-4 text-uppercase">Checkout</h3>
+          <button id="closeCart2"><i class="fas fa-times-circle"></i></button>
+    
+          <form class="row g-3 mt-2 needs-validation" novalidate>
+    
+            <div class="col-md-6">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="col-md-6">
+              <label for="surname" class="form-label">Surname</label>
+              <input type="text" class="form-control" id="surname" required>
+            </div>
+            <div class="col-md-6">
+              <label for="pay" class="form-label">Payment method:</label>
+              <select id="pay" class="form-select" required>
+                <option selected disabled value="">Select a payment method</option>
+                <option>Bank transfer</option>
+                <option>MercadoPago</option>
+                <option>Crypto</option>
+                <option>Cash (PagoFacil)</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <label for="adress" class="form-label">Adress</label>
+              <input id="adress" type="text" class="form-control" required>
+              </input>
+            </div>
+
+  <div class="col-12">
+          <label for="message" class="form-label">How do you know our page? (Optional)</label>
+          <textarea class="form-control" id="message" placeholder="Tell us how you discovered our page"
+            rows="6"></textarea>
+        </div>
+        <button id="checkout" type="submit"
+          class="col-3 text-uppercase col-lg-1 btn btn-gradient rounded-pill">Buy</button>
+      </form>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <footer class="footer">
         <div class="container-footer">
@@ -118,12 +187,16 @@
                 </div>
             </div>
     </footer>
-    <script src="/js/main.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  
+    <script src="js/bootstrap.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    <script src="./js/toastr.min.js"></script>
+    <script src="./js/main.js"> </script>
 
 </body>
 

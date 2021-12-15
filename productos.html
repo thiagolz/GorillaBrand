@@ -78,8 +78,7 @@
     <!-- Comentario en HTML -->
     <!-- Contenido de mi comentario -->
     <!-- Contenido o Elementos visuales -->
-    <hr>
-    <hr>
+    
     <article class="container">
       <div class="clothes">
         <div class="row">
@@ -113,12 +112,13 @@
                 </button>
               </div>
               
-            <h2>Hoodie Men</h2>
-            <button class="button-buy">Buy</button>
-            <span class="precio">100-1000$</span>
+            <h2 id="HoodieMen">Hoodie Men</h2>
+            <button class="button-buy cart1">Buy</button>
+            <span class="precio"><strong>70$</strong></span>
+            <input type="hidden" value=70$>
             <hr>
-            <fieldset class="description">
-                <div class="color">
+            <fieldset class="description" id="prod-description">
+                <div class="color" id="color-description">
                     <legend>Color:</legend>
                     <label for="ropa">Black:</label>
                     <input type="radio" name="color" id="Black" value="Black" />
@@ -153,7 +153,7 @@
                     </div>
                   </div>
                   <div class="carousel-item" data-bs-interval="2000">
-                    <img src="img/pantalones2.jpg" class="d-block w-100" alt="Pantalones Deportivos">
+                    <img src="img/pantalones.jpg" class="d-block w-100" alt="Pantalones Deportivos">
                     <div class="carousel-caption d-none d-md-block">
                     </div>
                   </div>
@@ -167,11 +167,12 @@
                   <span class="visually-hidden">Next</span>
                 </button>
               </div>
-            <h2>Joggins Men</h2>
-            <button class="button-buy">Buy</button>
-            <span>100-1000$</span>
+            <h2 id="JogginsMen">Joggins Men</h2>
+            <button class="button-buy car2">Buy</button>
+            <span><strong>50$</strong></span>
+            <input type="hidden" value=50$>
             <hr>
-            <fieldset class="description">
+            <fieldset class="description" id="prod-description">
                 <div class="color">
                     <legend>Color:</legend>
                     <label for="ropa">Black:</label>
@@ -222,11 +223,12 @@
                   <span class="visually-hidden">Next</span>
                 </button>
               </div>
-            <h2>Shirt Men</h2>
-            <button class="button-buy"> Buy </button>
-            <span>100-1000$</span>
+            <h2 id="ShirtMen">Shirt Men</h2>
+            <button class="button-buy cart3"> Buy </button>
+            <span><strong>30$</strong></span>
+            <input type="hidden" value=30$>
             <hr>
-            <fieldset class="description">
+            <fieldset class="description" id="prod-description">
                 <div class="color">
                     <legend>Color:</legend>
                     <label for="ropa">Black:</label>
@@ -276,11 +278,12 @@
                       <span class="visually-hidden">Next</span>
                     </button>
                   </div>
-                <h2>Woman Shirts</h2>
-                <button class="button-buy">Buy</button>
-                <span>100-1000$</span>
+                <h2 id="WomanShirt">Woman Shirts</h2>
+                <button class="button-buy cart4">Buy</button>
+                <span><strong>30$</strong></span>
+                <input type="hidden" value=30$>
                 <hr>
-                <fieldset class="description">
+                <fieldset class="description" id="prod-description">
                     <div class="color">
                         <legend>Color:</legend>
                         <label for="ropa">Black:</label>
@@ -335,6 +338,9 @@
   </div>      
     <br>
     <br>
+    <div id="app">  
+    </div>
+    <div class="container-p"></div>
 
     <footer class="footer">
         <div class="container-footer">
@@ -375,13 +381,15 @@
                 </div>
             </div>
     </footer>
-    <script src="/js/main.js"> </script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="sweetalert2.all.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
-
+    <script src="./js/main.js"> </script>
 </body>
 
 
