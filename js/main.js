@@ -276,6 +276,52 @@ function deleteButtons() {
     });
   }
 }
+// let productNumbers = localStorage.getItem("cartNumbers");
+// let cartCost = localStorage.getItem("totalCost");
+// let cartItems = localStorage.getItem("productsInCart");
+// cartItems = JSON.parse(cartItems);
+// let productName;
+// console.log(cartItems);
+
+// if (cartItems < 1) {
+//   cartItems = cartItems - 1;
+//   cartItems = 0;
+//   delete cartItems;
+//   onLoadCartNumbers();
+//   toastr["warning"](`You have succesfully removed ${item.tag} from the cart`);
+// }
+
+// function deleteItem(id) {
+//   let productNumbers = localStorage.getItem("cartNumbers");
+//   let cartCost = localStorage.getItem("totalCost");
+//   let cartItems = localStorage.getItem("productsInCart");
+//   cartItems = JSON.parse(cartItems);
+//   let productName;
+//   console.log(cartItems);
+//   let repeated = cartItems.find((prodR) => prodR.id == id);
+
+//   if (repeated.cartItems > 1) {
+//     repeated.cartItems = repeated.cartItems - 1;
+//     displayCart();
+//   } else {
+//     repeated.cartItems = 0;
+//     $.getJSON(URLJSON, function (answer, status) {
+//       if (status === "success") {
+//         let stock = answer;
+//         let item = stock.find((prod) => prod.id == id);
+//         delete cartItems[productName];
+//         localStorage.setItem("productsInCart", JSON.stringify(cartItems));
+
+//         cartItems = cartItems.filter((prodE) => prodE.id != item.id);
+//         displayCart();
+//         toastr["warning"](
+//           `You have succesfully removed ${item.name} from the cart`
+//         );
+//       }
+//     });
+//   }
+// }
+
 $(document).ready(function () {
   $(".button-buy").click(function () {
     Swal.fire("Good job!", "The product has been added!", "success");
@@ -342,5 +388,3 @@ function checkoutPay() {
 }
 
 checkoutPay();
-// $("#color-description").append(`<button id="btn1"> SUBMIT </button>`);
-// $("#prod-description").prepend(`<input id="ipt1" type="text">`);

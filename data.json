@@ -5,7 +5,7 @@
     "tag": "hoddie",
     "price": 70,
     "inCart": 0,
-    "image": ".//img/hoddie.jpg"
+    "image": "img/hoddie.jpg"
   },
   {
     "id": 2,
@@ -13,7 +13,7 @@
     "tag": "pantalones2",
     "price": 50,
     "inCart": 0,
-    "image": ".//img/pantalones2.jpg"
+    "image": "img/pantalones2.jpg"
   },
 
   {
@@ -22,7 +22,7 @@
     "tag": "shirt",
     "price": 30,
     "inCart": 0,
-    "image": ".//img/shirt.jpg"
+    "image": "img/shirt.jpg"
   },
   {
     "id": 4,
@@ -30,6 +30,6 @@
     "tag": "mujershirt",
     "price": 30,
     "inCart": 0,
-    "image": ".//img/mujershirt.jpg"
+    "image": "img/mujershirt.jpg"
   }
 ]

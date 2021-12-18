@@ -46,3 +46,38 @@ const products = [
     image: ".//img/mujershirt.jpg",
   },
 ];
+
+function deleteItem(id) {
+  let repeated = cartItems.find((prodR) => prodR.id == id);
+  if (repeated.productNumbers > 1) {
+    repeated.productNumbers = repeated.productNumbers - 1;
+    document.getElementsByClassName(
+      `decrease${repeated.id}`
+    ).innerHTML = `<p id="decrease${repeated.id}">Quantity: ${repeated.Quantity}</p>`;
+    cartItems();
+  } else {
+    repeated.productNumbers = 0;
+    $.getJSON(URLJSON, function (answer, status) {
+      if (status === "success") {
+        let stock = answer;
+        let item = stock.find((prod) => prod.id == id);
+        let deleteItem = document.getElementById(`decrease${item.id}`);
+        deleteItem.parentElement.remove();
+        cartItems = cartItems.filter((prodE) => prodE.id != item.id);
+        updateCart();
+        toastr["warning"](
+          `You have succesfully removed ${item.name} from the cart`
+        );
+      }
+    });
+  }
+}
+
+if (cartItems < 1) {
+  productNumbers = productNumbers - 1;
+  displayCart();
+} else {
+  productNumbers = 0;
+  onLoadCartNumbers();
+  toastr["warning"](`You have succesfully removed ${item.name} from the cart`);
+}
